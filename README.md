@@ -4,20 +4,20 @@
 Web Application Development
 
 ### Assignment Date:  
-(Month Day, Year)
+November 1, 2018
 
 ### Student Name:  
-(First and Last Name)
+Lily Bodolay
 
 ### Project Description:
-(In your own words, briefly describe the assignment.)
+This lesson introduces the advantages of code modularizations and resuable code by using conditional statements, loops, and functions.
 
 ### View Project:
 (Replace this statement with your Github Page URL that was created when you 
  published the project.)
 
 ### Lessons Learned in the Assignment:
-1. (Briefly describe a lesson/concept learned in this lesson.)
-2. (Briefly describe a lesson/concept learned in this lesson.)
-3. (Briefly describe a lesson/concept learned in this lesson.)
+1. Making decisions with conditional statements.
+2. Creating reuseable code with functions.
+3. Building array objects. 
 

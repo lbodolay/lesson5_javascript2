@@ -46,6 +46,20 @@ function calculateCurrency(){
         //USE THE TABLE PROVIDED FOR VALUES!!!
         var AUD = 1.40885; //exchange rate for Austrialian Dollar
         var AWG = 1.78511;
+        var BSD = 1.0000;
+        var XBT = 0.00015;
+        var GBP = 0.76826;
+        var CAD = 1.30976;
+        var CLP = 683.205;
+        var CNY = 6.93780;
+        var CUP = 25.0000;
+        var DKK = 6.49079;
+        var EUR = 0.87007;
+        var EGP = 17.8726;
+        var HKD = 7.83955;
+        var IRR = 4200;
+        var NGN = 3613969;
+        
 
          
          
@@ -79,7 +93,70 @@ function calculateCurrency(){
          
          //Calculate the exchange rate and set the country prefix using a selection statement
 
-
+        switch(country){
+            
+            case "0":
+                document.getElementById("currencyExchangeInfo").innerHTML = exchangeRate = usdAmount * AUD;
+                break;
+                
+            case "1":
+                document.getElementById("currencyExchangeInfo").innerHTML = exchangeRate = usdAmount * AWG;
+                break;
+                
+            case "2":
+                document.getElementById("currencyExchangeInfo").innerHTML = exchangeRate = usdAmount * BSD;
+                break;
+                
+            case "3":
+                document.getElementById("currencyExchangeInfo").innerHTML = exchangeRate = usdAmount * XBT;
+                break;
+                
+            case "4":
+                document.getElementById("currencyExchangeInfo").innerHTML = exchangeRate = usdAmount * GBP;
+                break;
+                
+            case "5":
+                document.getElementById("currencyExchangeInfo").innerHTML = exchangeRate = usdAmount * CAD;
+                break;
+                
+            case "6":
+                document.getElementById("currencyExchangeInfo").innerHTML = exchangeRate = usdAmount * CLP;
+                break;
+                
+            case "7":
+                document.getElementById("currencyExchangeInfo").innerHTML = exchangeRate = usdAmount * CNY;
+                break;
+                
+            case "8":
+                document.getElementById("currencyExchangeInfo").innerHTML = exchangeRate = usdAmount * CUP;
+                break;
+                
+            case "9":
+                document.getElementById("currencyExchangeInfo").innerHTML = exchangeRate = usdAmount * DKK;
+                break;
+                
+            case "10":
+                document.getElementById("currencyExchangeInfo").innerHTML = exchangeRate = usdAmount * EUR;
+                break;
+                
+            case "11":
+                document.getElementById("currencyExchangeInfo").innerHTML = exchangeRate = usdAmount * EGP;
+                break;
+                
+            case "12":
+                document.getElementById("currencyExchangeInfo").innerHTML = exchangeRate = usdAmount * HKD;
+                break;
+                
+            case "13":
+                document.getElementById("currencyExchangeInfo").innerHTML = exchangeRate = usdAmount * IRR;
+                break;
+                
+            case "14":
+                document.getElementById("currencyExchangeInfo").innerHTML = exchangeRate = usdAmount * NGN;
+                break;
+            
+            
+        }
 
 
 
@@ -102,7 +179,8 @@ function calculateCurrency(){
          *                                INSERT YOUR CODE BELOW!
         ***********************************************************************************************/                                                                                                               
 
-
+        //document.getElementById("currencyExchangeInfo").innerHTML = exchangeRate;
+        
 
 
 
@@ -146,10 +224,10 @@ function clearButton () {
         
         
         //Remove the text from the textfield
-        
+        document.getElementById("usdAmount").value = "";
         
         
         //Remove the currency exchange information from the document where the id is: "currencyExchangeInfo"
-
+        document.getElementById("currencyExchangeInfo").innerHTML = "";
 
 }//end of clearButton function
